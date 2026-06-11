@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+*{
+    background-color: black;
+    font-family: 'Chakra Petch', sans-serif;
+    color: green;
+    font-size: 40px;
+}
+#home
+{
+    margin-left: 100px;
+    animation-name: anima;
+    animation-duration: 2s;
+}
+@keyframes anima {
+    from{
+        margin-top: -400px;
+    }
+}
+.highlight
+{
+    animation: highlighter 4s infinite;
+}
+@keyframes highlighter 
+{
+    0% , 100% {
+      background-color: transparent;
+    }
+    85% {
+      background-color: green;
+      color: black;
+    }
+}
+  
+/* Developer walking */
+#walk
+{
+    margin-top: 50px;
+    animation-name: walk;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    /* ++++++++++++++++++++++++++++++++++++++++ */
+    position: relative;
+}
+@keyframes walk {
+    0%{
+        margin-left: -20vw;
+    }
+    100%{
+        margin-left: 80vw;
+    }
+}
+
+/* All the buttons there is */
+.button
+{
+    border: green 4px solid;
+    background-color: transparent;
+    color: green;
+    font-size: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    padding: 10px 50px;
+}
+.button:hover
+{
+    color: limegreen;
+    border: 4px solid limegreen;
+}
+
+
+.sidebar
+{
+    text-decoration: none;
+    color: green;
+    display:block;
+    float: left;
+    text-align: right;
+    padding: 10px;
+    font-size: 0.5em;
+}
+nav{
+    padding-left: 50px;
+}
+a:hover
+{
+    color: limegreen;
+}
+ul
+{
+    list-style-type: none;
+}
+.headings
+{
+    margin:100px;
+}
+
+/* Project Grids */
+.projects 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 3fr); /* Adjust the number of columns as needed */
+    margin: 100px;
+    grid-gap: 20px; /* Adjust the gap between grid items as needed */
+}
+  
+.project 
+{
+    overflow: hidden;
+    
+}
+  
+.project img 
+{
+    width: 90%;
+    height: auto;
+    border: solid 2px green;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+.about{
+    margin: 100px;
+}
+.aboutp
+{
+    font-size: 0.7rem;
+}
+.projectdescleft
+{
+    font-size: 20px;
+    align-self: center;
+}
+.projectdescright
+{
+    font-size: 20px;
+    align-self: center;
+    text-align: right;
+    padding-right: 50px;
+}
+.moreproj
+{
+    margin-left: 42vw;
+}
+.contact
+{
+    margin: 100px;
+}
+.image
+{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+.title
+{
+    text-decoration: underline;
+    font-weight: 800;
+    font-size: 25px;
+}
+.title{
+    font-size: 20px;
+}
+.skillborder{
+    margin-left: 100px;
+}
+.skill{
+    font-size: 0.8em;
+}
+progress 
+{
+    width: 50%;
+    height: 20px;
+}
+progress::-webkit-progress-value {
+    background-color: green;
+}
+progress::-moz-progress-bar {
+    background-color: green;
+}
+progress::-webkit-progress-bar {
+    background-color: lightgray;
+}
+progress::-moz-progress-bar {
+    background-color: lightgray;
+}
+.review{ 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+        /* margin: 0px 100px; */
+        /* grid-gap: 20px; Adjust the gap between grid items as needed */
+        /* border: 2px solid green; */
+        /* bhindi ka sukka aaj */
+}.review1{
+    /* border: 2px solid white; */
+}
+.reviewp{
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+.num{
+    text-align: center;
+    font-weight: 900;
+}
+.footer{
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+/* @media screen and (max-width: 767px)
+{
+    .projects 
+    {
+      grid-template-columns: 1fr;  Show one column for mobile devices
+    }
+} */
+
+@media screen and (max-width: 767px) {
+    .projects {
+      grid-template-columns: 1fr; /* Show one column for mobile devices */
+    }
+    #home,#projects,#about,#skills,.skillborder,.about,#contact{
+        margin-left: 10px;
+    }
+
+  
+    .projectdescleft,
+    .projectdescright {
+      display: none; /* Hide the project description divs on mobile devices */
+    }
+  
+    /* Adjust the font size for readability on mobile devices */
+    body {
+      font-size: 16px;
+    }
+  
+    h2.headings {
+      font-size: 28px;
+    }
+  
+    p.aboutp,
+    p.skill, .url {
+      font-size: 18px;
+    }
+    
+    progress {
+      height: 12px;
+    }
+    .project img 
+    {
+    width: 80%;
+    height: auto;
+    border: solid 2px green;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+      }
+    
+      .moreproj {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+      }
+      nav{
+        margin-left: -50px;
+    }
+}
+  

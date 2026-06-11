@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+    *{
+    background-color: black;
+    font-family: 'Chakra Petch', sans-serif;
+    color: green;
+    font-size: 40px;
+    }
+    .logos{
+        height: 45px;
+        margin-left: 80px;
+        margin-bottom: -10px;
+        margin-right: 20px;
+    }
+    .h1{
+        display: inline;
+    }
+    .head
+    {
+        margin-top: 50px;
+    }
+    .container
+    {
+        /* border: 2px solid white; */
+        display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    margin: 90px;
+    grid-gap: 20px;
+    }
+    .projimage
+    {width: 500px;
+    border: 2px solid green; padding: 2px;}
+    p
+    {font-size: 20px;}
+    .center{
+        text-align: center;
+    }
+    @media screen and (max-width: 767px)
+    {
+        .projimage{
+            width: 400px;
+        }
+        .container{
+            grid-template-columns: 1fr;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="head">
+    <a href="index.html"><img src="images/back_to_60px.png" class="logos"  alt="back_buton"></a><h1 class="h1">My Projects</h1>
+    </div>
+    <div class="container">
+        <div class="project"><a href="Projects/Calc/Calc.html"><img src="images/CalcApp.png" alt="" class="projimage"></a></div>
+        <div class="project"> <p>Made this simple but aesthetic calculator as a part of my web development learning journey.</p></div>
+        <div class="project"><a href="Projects/ChatGPT Documentation/index.html"><img src="https://iphonesoft.fr/images/2023/01/chatgpt-logo-price.jpg" alt="" class="projimage"></a></div>
+        <div class="project"> <p>ChatGPT is the most advanced AI out there. But, people don't know how to utilize its potential. This is a perfect documentation with the help of a book I found.</p></div>
+        <!-- <div class="project"><img src="images/Blank-Wallpaper-Widescreen.jpg" alt="" class="projimage"></div>
+        <div class="project"> <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea sint error odio doloribus nostrum dolorum atque? Facere totam assumenda repellendus eius, beatae odit a ab, eligendi rem quaerat minus!</p></div> -->
+    </div>
+    <p class="center">More Projects coming soon ...</p>
+
+
+    
+      
+      
+
+</body>
+</html>
